@@ -1,0 +1,8 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/fumoumou/Desktop/T113-s3/ledc'
+arm-linux-gnueabihf-gcc -g -c main.c 
+arm-linux-gnueabihf-ld -Tledc.lds -o ledc.elf start.o main.o 
+arm-linux-gnueabihf-objcopy -O binary ledc.elf ledc.bin
+arm-linux-gnueabihf-objdump -D -m arm ledc.elf > ledc.dis
+make: Leaving directory '/home/fumoumou/Desktop/T113-s3/ledc'
+ 

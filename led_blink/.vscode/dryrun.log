@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/fumoumou/Desktop/T113-s3/led_blink'
+arm-linux-gnueabihf-gcc -g -c start.S
+arm-linux-gnueabihf-ld -Tgboot.lds -o gboot.elf start.o
+arm-linux-gnueabihf-objcopy -O binary gboot.elf gboot.bin
+make: Leaving directory '/home/fumoumou/Desktop/T113-s3/led_blink'
+ 
